@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+=== Writing to FIFO ===
+Write: 12153524
+Write: c0895e81
+Write: 8484d609
+Write: b1f05663
+Write: 6b97b0d
+Write: 46df998d
+Write: b2c28465
+Write: 89375212
+=== Reading from FIFO ===
+Read: xxxxxxxx
+Read: 12153524
+Read: c0895e81
+Read: 8484d609
+Read: b1f05663
+Read: 6b97b0d
+Read: 46df998d
+$finish called at time : 205 ns : File "C:/Users/nithy/Desktop/21IN/fifo/fifo.srcs/sim_1/new/fifo_tb.v" Line 78
