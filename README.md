@@ -7,7 +7,7 @@ This project implements a synchronous FIFO buffer with parameterizable width and
 - `FIFO_WIDTH` (default: 32 bits)
 - `FIFO_DEPTH` (default: 8 entries)
 > **🔽 RTL Diagram:**  
-> ![RTL](Screenshot 2025-05-30 210853.png)
+> ![RTL]([Screenshot 2025-05-30 210853.png](https://github.com/Nithyanand-b/fifo/blob/c7effc400dd6e62b09c8cc8cb1335bd9310311d3/Screenshot%202025-05-30%20210853.png))
 ## Files
 
 - `fifo.v` – FIFO design module
