@@ -6,7 +6,8 @@ This project implements a synchronous FIFO buffer with parameterizable width and
 
 - `FIFO_WIDTH` (default: 32 bits)
 - `FIFO_DEPTH` (default: 8 entries)
-
+> **🔽 RTL Diagram:**  
+> ![RTL](rtl.png)
 ## Files
 
 - `fifo.v` – FIFO design module
@@ -30,13 +31,3 @@ The FIFO uses:
 1. Applies reset
 2. Writes random data until FIFO is full
 3. Reads data back until FIFO is empty
-
-## Simulation
-
-Use a simulator like Icarus Verilog or ModelSim.
-
-### Icarus Verilog Example:
-
-```bash
-iverilog -g2012 -o fifo_sim fifo.v fifo_tb.v
-vvp fifo_sim
