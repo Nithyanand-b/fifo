@@ -4,10 +4,13 @@
 
 This project implements a synchronous FIFO buffer with parameterizable width and depth, along with a testbench for simulation.
 
-- `FIFO_WIDTH` (default: 32 bits)
-- `FIFO_DEPTH` (default: 8 entries)
-> **🔽 RTL Diagram:**  
-> ![RTL]([Screenshot 2025-05-30 210853.png](https://github.com/Nithyanand-b/fifo/blob/c7effc400dd6e62b09c8cc8cb1335bd9310311d3/Screenshot%202025-05-30%20210853.png))
+- `FIFO_WIDTH`: Default 32 bits
+- `FIFO_DEPTH`: Default 8 entries
+
+## RTL Diagram
+
+![RTL](https://github.com/Nithyanand-b/fifo/blob/c7effc400dd6e62b09c8cc8cb1335bd9310311d3/Screenshot%202025-05-30%20210853.png)
+
 ## Files
 
 - `fifo.v` – FIFO design module
@@ -17,17 +20,19 @@ This project implements a synchronous FIFO buffer with parameterizable width and
 
 ### FIFO Design
 
-The FIFO uses:
+The FIFO includes:
 - Internal memory array
 - `write_pointer` and `read_pointer`
-- Status signals: `full` and `empty`
+- Status signals: `full`, `empty`
 
 **Control Signals:**
-- `clk`, `reset` (active low), `cs` (chip select)
-- `write_en`, `read_en`
+- `clk`: Clock input  
+- `reset`: Active-low reset  
+- `cs`: Chip select  
+- `write_en`, `read_en`: Write and read enable signals
 
 ### Testbench Behavior
 
 1. Applies reset
 2. Writes random data until FIFO is full
-3. Reads data back until FIFO is empty
+3. Reads data until FIFO is empty
